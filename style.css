@@ -1,31 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  font-family: Arial;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 body {
   background-color: #323c54;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-a, p, span{
+.container {
+  text-align: center;
+}
+
+.memoji {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: #ededed;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-links a {
   color: #8f9dbc;
   text-decoration: none;
+  font-size: 2.5rem;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
 }
 
-a:hover {
+.social-links a:hover {
   color: #b9b9b9;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items:center;
-}
-
-#info {
-  margin: 25px;
 }
